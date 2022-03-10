@@ -1,0 +1,7 @@
+<h2>メモ一覧</h2> 
+
+<% @notes.each do |note| %>
+  <p><a href='/show/<%= note.split(/,/)[0] %>'><%= note %></a></p>
+<% end %>
+
+<p><a href='/new'>new</a></p>
